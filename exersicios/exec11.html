@@ -1,0 +1,14 @@
+<form onclick="return validatePassword()">
+    Senha: <input type="password" id="password">
+    <input type="button" value="Enviar">
+</form>
+<script>
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        if (password.length < 6) {
+            alert("a senha dreve ter pelo menos 6 caracteres");
+            return false;
+        }
+        return true
+    }
+</script>

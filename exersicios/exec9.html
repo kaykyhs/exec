@@ -1,0 +1,10 @@
+<img id="mainImage" src="img/img1.gif" width="400">
+<br>
+<img src="img/img1.gif" width="100" onclick="changeMainImage('img/img1.gif')">
+<img src="img/img2.gif" width="100" onclick="changeMainImage('img/img2.gif')">
+
+<script>
+    function changeMainImage(image) {
+        document.getElementById("mainImage").src = image;
+    }
+</script>

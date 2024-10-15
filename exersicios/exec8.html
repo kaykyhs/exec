@@ -1,0 +1,10 @@
+<button onclick="showTime()">Mostrar a Hora</button>
+<p id="time"></p>
+
+<script>
+    function showTime() {
+        var now = new Date();
+        var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + ":" + now.getMilliseconds();
+        document.getElementById("time").textContent = time;
+    }
+</script>

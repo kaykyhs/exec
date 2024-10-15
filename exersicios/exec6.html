@@ -1,0 +1,15 @@
+<input type="text" id="item" placeholder="adicionar item">
+<button onclick="additem()">adicionar</button>
+<ul id="list"></ul>
+
+<script>
+    function additem() {
+    var item = document.getElementById("item").value;
+    if (item != "") {
+        var li = document.createElement("li");
+        li.textContent = item; 
+        document.getElementById("list").appendChild(li);
+        document.getElementById("item").value = "";
+    }
+}
+</script>
